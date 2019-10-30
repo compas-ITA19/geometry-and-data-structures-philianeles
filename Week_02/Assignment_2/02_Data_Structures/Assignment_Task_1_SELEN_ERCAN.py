@@ -22,7 +22,7 @@ print faces
 for face in faces:
     print my_mesh.face_vertices(face)
 
-"""
+
 find_path = True
 safety = 0
 while find_path and safety < 2:
@@ -32,16 +32,12 @@ while find_path and safety < 2:
     common_ver = my_mesh.face_vertices(faces[0])
     print common_ver
     path.append(common_ver[0])
-"""
+
 
 
 artist = MeshArtist(my_mesh)
-#artist.draw_faces(join_faces=True)
-"""
 artist.draw_vertices(
 color={key: (255, 0, 0) for key in common_ver})
 
-
 artist.draw_vertexlabels(
 text={key: str(key) for key in common_ver})
-"""
